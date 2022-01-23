@@ -49,5 +49,5 @@
     "extra": {
         "contao-manager-plugin": "Sfachinger\\TestBundle\\ContaoManager\\Plugin"
     },
-    "version": "master"
+    "version": "0.0.2"
 }
