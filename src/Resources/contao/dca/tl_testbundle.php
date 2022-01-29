@@ -122,7 +122,7 @@ $GLOBALS['TL_DCA']['tl_testbundle'] = array(
             //'relation'  => array('type' => 'hasOne', 'load' => 'lazy')
         ),
         'checkboxField'  => array(
-            'inputType' => 'select',
+            'inputType' => 'radioTable',
             'exclude'   => true,
             'search'    => true,
             'filter'    => true,
@@ -135,6 +135,15 @@ $GLOBALS['TL_DCA']['tl_testbundle'] = array(
             'sql'       => "varchar(255) NOT NULL default ''",
             //'relation'  => array('type' => 'hasOne', 'load' => 'lazy')
         ),
+        'myradiotable' => [
+            'exclude'               => true,
+            'inputType'             => 'radioTable',
+            'options'   => array('firstoption', 'secondoption'),
+            //'foreignKey'            => 'tl_user.name',
+            //'options_callback'      => array('CLASS', 'METHOD'),
+            'eval'                  => ['cols'=>4, 'tl_class'=>'w50'],
+            'sql'                   => "varchar(255) NOT NULL default ''"
+        ]
         'multitextField' => array(
             'inputType' => 'text',
             'exclude'   => true,
