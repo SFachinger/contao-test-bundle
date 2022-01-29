@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /*
  * This file is part of test-bundle.
- * 
+ *
  * (c) Steffen Fachinger 2022 <steffen.fachinger@online.de>
  * @license GPL-3.0-or-later
  * For the full copyright and license information,
@@ -114,8 +114,8 @@ $GLOBALS['TL_DCA']['tl_testbundle'] = array(
             'filter'    => true,
             'sorting'   => true,
             'reference' => $GLOBALS['TL_LANG']['tl_testbundle'],
-            'options'   => array('firstoption', 'secondoption'),
-            //'foreignKey'            => 'tl_user.name',
+            //'options'   => array('firstoption', 'secondoption'),
+            'foreignKey'            => 'tl_user.name',
             //'options_callback'      => array('CLASS', 'METHOD'),
             'eval'      => array('includeBlankOption' => true, 'tl_class' => 'w50'),
             'sql'       => "varchar(255) NOT NULL default ''",
